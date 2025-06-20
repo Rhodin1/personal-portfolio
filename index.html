@@ -4,13 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rhodin - Personal Portfolio</title>
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- AOS Animation Library -->
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
-  <!-- Initialize AOS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 800, once: true });
@@ -25,9 +23,10 @@
         <li><a href="#skills" class="hover:text-indigo-600 transition">Skills</a></li>
         <li><a href="#projects" class="hover:text-indigo-600 transition">Projects</a></li>
         <li><a href="#experience" class="hover:text-indigo-600 transition">Experience</a></li>
+        <li><a href="#certificates" class="hover:text-indigo-600 transition">Certificates</a></li>
         <li><a href="#education" class="hover:text-indigo-600 transition">Education</a></li>
         <li><a href="#contact" class="hover:text-indigo-600 transition">Contact</a></li>
-        <li><a href="Resume (1) (1).pdf" download class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-700 transition">Download CV</a></li>
+        <li><a href="resume.pdf" download class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-700 transition">Download CV</a></li>
       </ul>
     </div>
   </nav>
@@ -36,11 +35,11 @@
   <section id="home" class="pt-24 bg-white" data-aos="fade-right">
     <div class="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center">
       <div class="md:w-1/2">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm <!--Hirwa Clement--> Rhodin</h1>
-        <p class="text-lg mb-6">A passionate Software Engineer specialized in building modern web applications.</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm Rhodin</h1>
+        <p class="text-lg mb-6">Software Engineer • Full Stack Web Developer</p>
         <div class="flex space-x-4">
           <a href="#contact" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition transform hover:scale-105">Contact Me</a>
-          <a href="Resume (1) (1).pdf" download class="inline-block bg-gray-800 text-white px-6 py-3 rounded-lg shadow hover:bg-gray-900 transition transform hover:scale-105">Download CV</a>
+          <a href="resume.pdf" download class="inline-block bg-gray-800 text-white px-6 py-3 rounded-lg shadow hover:bg-gray-900 transition transform hover:scale-105">Download CV</a>
         </div>
       </div>
       <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
@@ -53,7 +52,9 @@
   <section id="about" class="bg-gray-100 py-16" data-aos="fade-up">
     <div class="container mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
-      <p class="max-w-3xl mx-auto text-center">I am a dedicated software engineer with 3+ years of experience in developing scalable web applications using modern frameworks. I love solving complex problems and continuously learning new technologies.</p>
+      <p class="max-w-3xl mx-auto text-center">I’m Hirwa Clement Rhodin, a software engineer who builds robust full stack web applications with ASP.NET Core, 
+Java Spring Boot, and modern frontend frameworks like React and Tailwind CSS. I excel at architecting RESTful APIs, 
+and implementing secure authentication (JWT, TOTP). I am Passionate about clean code, scalable patterns, and continuous learning (currently deepening my Python skills), I thrive on collaborating to deliver intuitive, high impact solutions.</p>
     </div>
   </section>
 
@@ -62,11 +63,15 @@
     <div class="container mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-        <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition">JavaScript</div>
+        <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition">Java</div>
+	      <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition">JavaScript</div>
+	      <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition">C Programming</div>
+	      <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition">C#</div>
         <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition">React</div>
         <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition">Node.js</div>
         <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition">Python</div>
         <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition">HTML &amp; CSS</div>
+	      <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition">Tailwind CSS</div>
         <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition">SQL &amp; NoSQL</div>
         <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition">Git &amp; GitHub</div>
         <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 transition">Docker &amp; Kubernetes</div>
@@ -79,19 +84,23 @@
     <div class="container mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
       <div class="space-y-8 max-w-4xl mx-auto">
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1 flex flex-col md:flex-row" data-aos="zoom-in">
-          <img src="https://via.placeholder.com/150" alt="Project 1" class="w-full md:w-1/3 rounded-lg mb-4 md:mb-0">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1 flex flex-col md:flex-row" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://via.placeholder.com/150" alt="Bus Management System" class="w-full md:w-1/3 rounded-lg mb-4 md:mb-0">
           <div class="md:ml-6">
-            <h3 class="text-2xl font-semibold mb-2">Project Title One</h3>
-            <p class="mb-2">A brief description of the project, tech stack used, and your role.</p>
+            <h3 class="text-2xl font-semibold mb-2">Bus Management System</h3>
+            <p class="font-semibold text-indigo-600 mb-2">ASP.NET Core • Razor Pages • C#</p>
+	    <p class="mb-2">Designed and implemented a schedule‑aware seat‑tracking module—modeling capacity, sold, and availability per departure—to support real‑time booking and reporting.</p>
             <a href="#" class="text-indigo-600 hover:underline">View Details →</a>
           </div>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1 flex flex-col md:flex-row" data-aos="zoom-in" data-aos-delay="100">
-          <img src="https://via.placeholder.com/150" alt="Project 2" class="w-full md:w-1/3 rounded-lg mb-4 md:mb-0">
+        
+	<div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1 flex flex-col md:flex-row" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://via.placeholder.com/150" alt="Car Wash Management System" class="w-full md:w-1/3 rounded-lg mb-4 md:mb-0">
           <div class="md:ml-6">
-            <h3 class="text-2xl font-semibold mb-2">Project Title Two</h3>
-            <p class="mb-2">A brief description of the project, tech stack used, and your role.</p>
+            <h3 class="text-2xl font-semibold mb-2">Car Wash Management System</h3>
+            <p class="font-semibold text-indigo-600 mb-2"><a class="text-black">Frontend: </a>JavaScript • React • Vite • Tailwind CSS</p>
+	    <p class="font-semibold text-indigo-600 mb-2"><a class="text-black">Backend: </a>Java Spring Boot • Hibernate</p>
+	    <p class="mb-2">Built A full-stack web application for managing car wash operations. Integrated dynamic charts to visualize revenue and usage trends.</p>
             <a href="#" class="text-indigo-600 hover:underline">View Details →</a>
           </div>
         </div>
@@ -105,12 +114,13 @@
       <h2 class="text-3xl font-bold text-center mb-8">Experience</h2>
       <div class="space-y-6 max-w-3xl mx-auto">
         <div class="border-l-4 border-indigo-600 pl-4">
-          <h3 class="text-2xl font-semibold">Software Engineer @ Company Name</h3>
-          <span class="text-gray-600">Jan 2022 - Present</span>
+          <h3 class="text-2xl font-semibold">Full Stack Developer (School Projects)</h3>
+          <span class="text-gray-600">AUCA | Nov 2022 - Present</span>
           <ul class="list-disc ml-6 mt-2">
             <li>Developed and maintained web applications using React and Node.js.</li>
-            <li>Collaborated with cross-functional teams to define and implement new features.</li>
-            <li>Improved application performance by 30% through code optimization.</li>
+            <li>Architected and delivered multiple web modules using ASP.NET Core and Spring Boot.</li>
+            <li>Implemented secure user flows with JWT and Time based OTP (java otp).</li>
+            <li>Collaborated on frontend features using React, Vite, and Tailwind CSS.</li>
           </ul>
         </div>
         <div class="border-l-4 border-indigo-600 pl-4">
@@ -126,33 +136,50 @@
     </div>
   </section>
 
+  <!-- CERTIFICATES SECTION -->
+  <section id="certificates" class="bg-gray-100 py-16" data-aos="fade-up">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Certificates</h2>
+      <div class="grid grid-cols-2 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 hover:bg-indigo-50 hover:shadow-md transition">ALX AICE AI Career Essentials</div>
+	      <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 hover:bg-indigo-50 hover:shadow-md transition">Advanced Network Operations</div>
+	      <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 hover:bg-indigo-50 hover:shadow-md transition">Duolingo English Proficiency</div>
+	      <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 hover:bg-indigo-50 hover:shadow-md transition">Introduction to Network Operations </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 hover:bg-indigo-50 hover:shadow-md transition">Network Essentials</div>
+        <div class="bg-white p-6 rounded-lg shadow text-center transform hover:scale-105 hover:bg-indigo-50 hover:shadow-md transition">Operating Systems Basics</div>
+      </div>
+    </div>
+  </section>
+
   <!-- EDUCATION SECTION -->
-  <section id="education" class="bg-gray-100 py-16" data-aos="fade-up">
+  <section id="education" class="py-16" data-aos="fade-up">
     <div class="container mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-8">Education</h2>
       <div class="space-y-6 max-w-3xl mx-auto">
-        <div class="border-l-4 border-indigo-600 pl-4">
-          <h3 class="text-2xl font-semibold">Bachelor of Science in Software Engineering</h3>
-          <span class="text-gray-600">University Name, 2016 - 2020</span>
-          <p class="mt-2">Graduated with honors, relevant coursework: Data Structures, Web Technologies, Database Systems.</p>
+        <div class="border-l-4 border-indigo-600 pl-4 hover:text-indigo-600">
+          <h3 class="text-2xl font-semibold">Bachelor of Software Engineering</h3>
+          <span class="text-gray-600">Adventist University of Central Africa (AUCA) | Kigali, Rwanda</span>
+          <p class="mt-2">2022 - Present | Expected to Graduate: 2026</p>
+        </div>
+        <div class="border-l-4 border-indigo-600 pl-4 hover:text-indigo-600">
+          <h3 class="text-2xl font-semibold">Advanced Level Certificate | Mathematics, Chemistry & Biology</h3>
+          <span class="text-gray-600">Institut de Formation Apostolique de Kimihurura (IFAK) | Kigali, Rwanda</span>
+          <p class="mt-2">2018 - 2021</p>
+        </div>
+        <div class="border-l-4 border-indigo-600 pl-4 hover:text-indigo-600">
+          <h3 class="text-2xl font-semibold">Ordinary Level Certificate | General Science Program</h3>
+          <span class="text-gray-600">Petit Séminaire Saint Vincent de Ndera(PSSV) | Kigali, Rwanda</span>
+          <p class="mt-2">2015 - 2017</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT SECTION -->
-  <section id="contact" class="py-16" data-aos="fade-up">
+  <section id="contact" class="bg-gray-100 py-16" data-aos="fade-up">
     <div class="container mx-auto px-6 max-w-lg">
       <h2 class="text-3xl font-bold text-center mb-8">Get In Touch</h2>
-      <!-- Contact Info -->
-      <div class="mb-8 text-center space-y-2">
-        <p><strong>Email:</strong> <a href="mailto:h1rhodin@gmail.com" class="text-indigo-600 hover:underline">youremail@example.com</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/Rhodin1" target="_blank" class="text-indigo-600 hover:underline">github.com/yourusername</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hirwa-clement-rhodin-93a922301/" target="_blank" class="text-indigo-600 hover:underline">linkedin.com/in/yourprofile</a></p>
-      </div>
-      <!-- Contact Form via Formspree -->
       <form action="https://formspree.io/f/mnnvzbqw" method="POST" class="space-y-6" netlify>
-        <!-- Replace {YOUR_FORM_ID} with your actual Formspree ID -->
         <input type="hidden" name="_subject" value="New message from Portfolio" />
         <div>
           <label class="block mb-2 font-medium">Name</label>
@@ -164,7 +191,7 @@
         </div>
         <div>
           <label class="block mb-2 font-medium">Message</label>
-          <textarea name="message" rows="5" required class="w-full border border-gray-300 p-3 rounded-lg focus:outline-indigo-500"></textarea>
+          <textarea name="message" rows="3" required class="w-full border border-gray-300 p-3 rounded-lg focus:outline-indigo-500"></textarea>
         </div>
         <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg shadow hover:bg-indigo-700 transition transform hover:scale-105">Send Message</button>
       </form>
@@ -172,17 +199,29 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-white py-6 text-center text-gray-600" data-aos="fade-up">
-    © 2025 Your Name. All rights reserved.
+  <footer class="bg-indigo-50 py-6 text-center text-gray-600" data-aos="fade-up">
+    <div class="mb-12">
+        <div class="text-center">
+            <h3 class="text-xl font-semibold text-gray-800 mb-6">Connect With Me</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:h1rhodin@gmail.com" class="inline-flex items-center px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200 shadow-md hover:shadow-lg">
+                    <i class="fas fa-envelope mr-2"></i>
+                    Email Me
+                </a>
+                
+                <a href="https://github.com/Rhodin1" target="_blank" class="inline-flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors duration-200 shadow-md hover:shadow-lg">
+                    <i class="fab fa-github mr-2"></i>
+                    GitHub
+                </a>
+                
+                <a href="https://www.linkedin.com/in/hirwa-clement-rhodin-93a922301/" target="_blank" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-md hover:shadow-lg">
+                    <i class="fab fa-linkedin mr-2"></i>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </div>
+    © 2025 Hirwa Clement Rhodin. All rights reserved.
   </footer>
-
-  <!-- Deployment Instructions:
-    1. Replace placeholder text and URLs (your name, links, images).
-    2. Place your CV file (YourName_CV.pdf) in the root or public folder of your site.
-    3. Sign up at Formspree (https://formspree.io) and get your form ID.
-    4. Replace {YOUR_FORM_ID} in form action.
-    5. Commit this HTML to a GitHub repo and deploy to GitHub Pages or Netlify.
-    6. (Netlify) Ensure "Publish directory" is the folder containing this index.html and CV PDF.
-  -->
 </body>
 </html>
